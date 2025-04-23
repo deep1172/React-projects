@@ -6,16 +6,23 @@ function App() {
   // let counter = 15;
 
   const addValue =() =>{
+    if (counter >=20) {
+      return
+    }else{
     counter = counter +1;
     setCounter(counter);
     console.log('clicked', counter)
   }
+}
   const removeValue =() =>{
+    if (counter<=0) {
+      return ;
+    }else{
     counter = counter -1;
     setCounter(counter);
     console.log('clicked', counter)
   }
-
+}
   return (
     <>
       <h1>Counter React app</h1>

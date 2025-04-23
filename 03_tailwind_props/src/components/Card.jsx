@@ -1,6 +1,6 @@
-import React from 'react'
+// import React from 'react'
 
-function Card({username }) {
+function Card({username, btnText = "visit me"}) {
     // console.log(username);
   return (
     <>
@@ -16,8 +16,8 @@ function Card({username }) {
         <p className="mt-2 text-sm text-gray-300">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
         </p>
-        <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
-          View Profile &rarr;
+        <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-black">
+          {btnText}  &rarr;
         </button>
       </div>
     </div>
